@@ -1,0 +1,11 @@
+repositories {
+    flatDir {
+        dirs '../../repos/com/android_space/view-planets-activity/1.0.0'
+    }
+}
+
+dependencies {
+    compile (name: 'view-planets-activity-1.0.0', ext:'aar') //NEW LINE
+    compile fileTree(dir: 'libs', include: ['*.jar']) 
+    compile 'com.android.support:appcompat-v7:22.2.1'
+}

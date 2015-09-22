@@ -3,4 +3,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="button_show_empty_system">Show the empty system!</string>
+    <string name="button_show_solar_system_result">Show the solar system with result</string>
 </resources>
