@@ -20,13 +20,19 @@ android {
 }
 
 repositories {
-    flatDir {
-        dirs '../../repos/com/android_space/view-planets-activity/1.0.0'
+    maven {
+        url  "http://dl.bintray.com/kristina-hager/kh-examples"
     }
+    jcenter()
+//    flatDir {
+//        dirs '../../repos/com/android_space/viewplanetsactivity/1.0.0'
+//    }
 }
 
+
 dependencies {
-    compile (name: 'view-planets-activity-1.0.0', ext:'aar')
+//    compile (name: 'viewplanetsactivity-1.0.0', ext:'aar') //working for local deploy
+    compile group: 'com.android_space', name: 'viewplanetsactivity', version: '1.0.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.1'
 }
