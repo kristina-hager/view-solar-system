@@ -98,7 +98,7 @@ public class MainActivity extends ActionBarActivity {
 //                String result = data.getDataString();
                 Bundle bundle = data.getExtras();
                 String result = bundle.getString(Intent.EXTRA_TEXT);
-                Log.i("FOO", "got result: " + result);
+                Log.i(TAG, "got result: " + result);
                 TextView resultMessage = (TextView) findViewById(R.id.result_message);
                 resultMessage.setText(result);
             }
